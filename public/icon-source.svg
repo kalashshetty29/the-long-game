@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Warm paper background, matches app's bg-paper-50 -->
+  <rect width="512" height="512" rx="112" fill="#1a1a1a"/>
+
+  <!-- Four concentric arcs — opens upward, like a sunrise / rings stacking -->
+  <!-- Each arc is from 220° to 320° (top half, swept) -->
+
+  <!-- Outer arc — Move (red) -->
+  <path d="M 116 256 A 140 140 0 0 1 396 256"
+    fill="none" stroke="#D85A30" stroke-width="22" stroke-linecap="round"/>
+
+  <!-- 2nd arc — Fuel (green) -->
+  <path d="M 146 256 A 110 110 0 0 1 366 256"
+    fill="none" stroke="#1D9E75" stroke-width="22" stroke-linecap="round"/>
+
+  <!-- 3rd arc — Build (blue) -->
+  <path d="M 176 256 A 80 80 0 0 1 336 256"
+    fill="none" stroke="#185FA5" stroke-width="22" stroke-linecap="round"/>
+
+  <!-- Inner arc — Read (amber) -->
+  <path d="M 206 256 A 50 50 0 0 1 306 256"
+    fill="none" stroke="#BA7517" stroke-width="22" stroke-linecap="round"/>
+
+  <!-- Anchor line — the horizon, the ground state, "today" -->
+  <line x1="116" y1="296" x2="396" y2="296"
+    stroke="#fafaf7" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- Tiny serif L · G mark at bottom (subtle, optional brand anchor) -->
+  <text x="256" y="384" text-anchor="middle"
+    font-family="Georgia, serif" font-style="italic" font-weight="400"
+    font-size="42" fill="#fafaf7" opacity="0.55"
+    letter-spacing="6">long game</text>
+</svg>
