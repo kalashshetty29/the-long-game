@@ -1,6 +1,7 @@
 import React from 'react';
 import { Flame, Trophy, BookOpen, Dumbbell, BookMarked, Download, Upload, Sparkles, AlertCircle, TrendingUp, Activity } from 'lucide-react';
 import { Card, StreakCard, StatCard } from './_shared';
+import { TOTAL_WEEKS } from '../../lib/life-data';
 
 function ProgressView({ studyStreak, workoutStreak, readingStreak, dailyLog, completedWeeksCount, daysSinceStart, checkpoints, customGoals, exportData, importData }) {
   const studyDays = Object.values(dailyLog).filter(d => d.study?.studied).length;
